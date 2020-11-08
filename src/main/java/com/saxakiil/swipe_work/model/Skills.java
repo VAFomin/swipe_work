@@ -5,14 +5,14 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name="experience_table")
+@Table(name="skills_table")
 @Data
-public class Experience {
+public class Skills {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "experience")
-    private String experience;
+    @Column(name = "skill")
+    private String skill;
 }

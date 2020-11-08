@@ -4,17 +4,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name="city_table")
+@Table(name="employment_table")
 @Data
-public class City {
+public class Employment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "city")
-    private String city;
-
+    @Column(name = "employment")
+    private String employment;
 }
