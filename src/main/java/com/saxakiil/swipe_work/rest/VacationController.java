@@ -18,9 +18,4 @@ public class VacationController {
     public List<Vacation> getPullVacation(@RequestParam Integer countVacation) {
         return vacationService.getPullVacation(countVacation);
     }
-
-    @PostMapping("/addVacation")
-    public List<Vacation> getVacation(@RequestParam Integer countVacation) {
-        return vacationService.getPullVacation(countVacation);
-    }
 }
